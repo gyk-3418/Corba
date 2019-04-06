@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <LinearLayout
+        android:paddingTop="80dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/lyt_baslik"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/img_corba_icon"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@mipmap/ic_launcher"
+            app:layout_constraintBottom_toTopOf="parent"
+            app:layout_constraintRight_toLeftOf="parent" />
+        <TextView
+            style="@style/text1"
+            android:textStyle="bold"
+            android:layout_marginLeft="10dp"
+            android:text="Çorbaya Hoşgeldiniz\nHadi Karıştırmaya Başlayın :)"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toRightOf="@id/img_corba_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <EditText
+        android:id="@+id/ed_email"
+        style="@style/marginTheme"
+        android:layout_gravity="center"
+        android:hint="E-mail adresinizi giriniz"
+        android:textColor="@color/colorOrangeDark"
+        app:layout_constraintTop_toTopOf="@id/lyt_baslik"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:background="@drawable/border"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content" />
+        <EditText
+            android:id="@+id/ed_sifre"
+            style="@style/marginTheme"
+            android:layout_gravity="center"
+            android:hint="Şifrenizi giriniz"
+            android:inputType="textPassword"
+            android:textColor="@color/colorOrangeDark"
+            app:layout_constraintTop_toTopOf="@id/ed_email"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:background="@drawable/border"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content" />
+    <Button
+        android:id="@+id/btnLogin"
+        style="@style/button"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="Giriş Yap / Kaydol"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/navigationView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="0dp"
+        android:layout_marginStart="0dp"
+        android:background="?android:attr/windowBackground"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:itemBackground="@color/colorPrimary"
+        app:itemIconTint="@color/white"
+        app:itemTextColor="@color/white"
+        app:menu="@menu/navigation"/>
+
+</android.support.constraint.ConstraintLayout>
