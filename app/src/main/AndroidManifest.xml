@@ -28,7 +28,7 @@
         android:theme="@style/AppTheme">
         <meta-data
             android:name="com.google.android.actions"
-            android:resource="@xml/border" />
+            android:resource="@xml/navigation" />
 
         <activity android:name=".ItemAddActivity" />
         <!--
