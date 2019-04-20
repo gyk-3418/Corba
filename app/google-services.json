@@ -1,0 +1,35 @@
+{
+  "project_info": {
+    "project_number": "969820540779",
+    "firebase_url": "https://fir-proje-b2b19.firebaseio.com",
+    "project_id": "fir-proje-b2b19",
+    "storage_bucket": "fir-proje-b2b19.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:969820540779:android:6fd314c3182e57d5",
+        "android_client_info": {
+          "package_name": "com.example.corba"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCDXGY-9MbYTxFHCk5KHvfkY7wlhkeuNms"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "969820540779-fgvs41jl5311ojhrpt73jca8q9j8tj75.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
